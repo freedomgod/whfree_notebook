@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="4" class="chart-container" style="width:640px; height:480px;"></div>
+    <script>
+        var chart_4 = echarts.init(
+            document.getElementById('4'), 'white', {renderer: 'canvas'});
+        var option_4 = {
+    "backgroundColor": "#ADD8E6",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u5173\u6ce8\u516c\u4f17\u53f71",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5426",
+                    "value": 94045
+                },
+                {
+                    "name": "\u662f",
+                    "value": 41572
+                }
+            ],
+            "radius": [
+                50,
+                80
+            ],
+            "center": [
+                "20%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":         function(params) {            if(params.name == '\u5426')                return '\n\n\n' + params.name + ' : ' + params.value;            return params.name + ' : ' + params.value;        }        
+            }
+        },
+        {
+            "type": "pie",
+            "name": "\u5173\u6ce8\u516c\u4f17\u53f72",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5426",
+                    "value": 125626
+                },
+                {
+                    "name": "\u662f",
+                    "value": 9991
+                }
+            ],
+            "radius": [
+                50,
+                80
+            ],
+            "center": [
+                "50%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":         function(params) {            if(params.name == '\u5426')                return '\n\n\n' + params.name + ' : ' + params.value;            return params.name + ' : ' + params.value;        }        
+            }
+        },
+        {
+            "type": "pie",
+            "name": "\u6dfb\u52a0\u9500\u552e\u597d\u53cb",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5426",
+                    "value": 135099
+                },
+                {
+                    "name": "\u662f",
+                    "value": 518
+                }
+            ],
+            "radius": [
+                50,
+                80
+            ],
+            "center": [
+                "80%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":         function(params) {            if(params.name == '\u5426')                return '\n\n\n' + params.name + ' : ' + params.value;            return params.name + ' : ' + params.value;        }        
+            }
+        },
+        {
+            "type": "pie",
+            "name": "\u8fdb\u7fa4",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5426",
+                    "value": 135099
+                },
+                {
+                    "name": "\u662f",
+                    "value": 518
+                }
+            ],
+            "radius": [
+                50,
+                80
+            ],
+            "center": [
+                "35%",
+                "70%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":         function(params) {            if(params.name == '\u5426')                return '\n\n\n' + params.name + ' : ' + params.value;            return params.name + ' : ' + params.value;        }        
+            }
+        },
+        {
+            "type": "pie",
+            "name": "\u91cd\u590d\u5b66\u4e60",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5426",
+                    "value": 112610
+                },
+                {
+                    "name": "\u662f",
+                    "value": 23007
+                }
+            ],
+            "radius": [
+                50,
+                80
+            ],
+            "center": [
+                "65%",
+                "70%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":         function(params) {            if(params.name == '\u5426')                return '\n\n\n' + params.name + ' : ' + params.value;            return params.name + ' : ' + params.value;        }        
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5426",
+                "\u662f"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u997c\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_4.setOption(option_4);
+    </script>
+</body>
+</html>
